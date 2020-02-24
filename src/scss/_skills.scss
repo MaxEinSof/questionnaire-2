@@ -1,0 +1,93 @@
+.skills {
+	@include section;
+
+	padding-top: 32px;
+	padding-bottom: 0;
+
+	&__title {
+		margin: 0;
+		margin-bottom: 20px;
+		font-weight: 500;
+		color: $color-alt-black;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+	}
+
+	&__item {
+		display: flex;
+		margin-bottom: 37px;
+		width: 140px;
+
+		label {
+			position: relative;
+			padding-left: 27px;
+			cursor: pointer;
+
+			&::before {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 1px;
+				border-radius: 5px;
+				width: 19px;
+				height: 19px;
+				background-color: $color-alt-gallery;
+				transition: opacity $transition-time $transition-function, background-color $transition-time $transition-function;
+			}
+
+			&:hover {
+				&::before {
+					background-color: rgba($color-dove-gray, 0.2);
+				}
+			}
+		}
+
+		input {
+			@include visually-hidden;
+
+			&:checked + label {
+				&::before {
+					background-color: $color-cerulean;
+				}
+
+				&::after {
+					content: "";
+					position: absolute;
+					left: 2px;
+					top: 4px;
+					width: 15px;
+					height: 12px;
+					background: url("../images/sprites/svg/check.svg") no-repeat 0 0;
+				}
+
+				&:hover {
+					&::before {
+						opacity: 0.5;
+					}
+				}
+			}
+
+			&:focus + label {
+				&::before {
+					background-color: rgba($color-dove-gray, 0.2);
+				}
+			}
+
+			&:focus:checked + label {
+				&::before {
+					background-color: $color-cerulean;
+					opacity: 0.5;
+				}
+			}
+		}
+	}
+}

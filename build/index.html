@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width">
+		<title>Анкета</title>
+		<link rel="stylesheet" href="css/main.css?v=1582288553209">
+	</head>
+	<body>
+		<main class="site-main">
+			<h1 class="site-main__title">Анкета</h1>
+			<div class="container">
+				<section class="personal-info">
+					<h2 class="personal-info__title">Личная информация</h2>
+					<div class="personal-info__photo"><img src="images/photo.jpg" width="138" height="138" alt="Фотография"></div>
+					<div class="personal-info__inputs">
+						<div class="personal-info__input js-input is-filled">
+							<label for="name">Имя</label>
+							<input type="text" name="name" id="name" minlength="2" maxlength="15" value="Максим">
+						</div>
+						<div class="personal-info__input js-input is-filled">
+							<label for="birth-date">Дата рождения</label>
+							<input type="text" name="birth-date" id="birth-date" value="24.04.1988">
+						</div>
+						<div class="personal-info__input js-input is-filled">
+							<label for="city">Город</label>
+							<input type="text" name="city" id="city" value="Михайловск">
+						</div>
+						<div class="personal-info__input js-input is-filled">
+							<label for="contact-details">Контактные данные</label>
+							<input type="text" name="contact-details" id="contact-details" value="maxeinsof@gmail.com">
+						</div>
+					</div>
+				</section>
+				<section class="skills">
+					<h2 class="skills__title">Навыки</h2>
+					<ul class="skills__list">
+						<li class="skills__item">
+							<input type="checkbox" name="html5" id="html5" checked="checked"/>
+							<label for="html5">html5</label>
+						</li>
+						<li class="skills__item">
+							<input type="checkbox" name="sass" id="sass" checked="checked"/>
+							<label for="sass">sass</label>
+						</li>
+						<li class="skills__item">
+							<input type="checkbox" name="vanillajs" id="vanillajs" checked="checked"/>
+							<label for="vanillajs">vanillajs</label>
+						</li>
+						<li class="skills__item">
+							<input type="checkbox" name="git" id="git" checked="checked"/>
+							<label for="git">git</label>
+						</li>
+						<li class="skills__item">
+							<input type="checkbox" name="css3" id="css3" checked="checked"/>
+							<label for="css3">css3</label>
+						</li>
+						<li class="skills__item">
+							<input type="checkbox" name="less" id="less" checked="checked"/>
+							<label for="less">less</label>
+						</li>
+						<li class="skills__item">
+							<input type="checkbox" name="angular" id="angular"/>
+							<label for="angular">angular</label>
+						</li>
+						<li class="skills__item">
+							<input type="checkbox" name="foundation" id="foundation"/>
+							<label for="foundation">foundation</label>
+						</li>
+						<li class="skills__item">
+							<input type="checkbox" name="bem" id="bem" checked="checked"/>
+							<label for="bem">бэм</label>
+						</li>
+						<li class="skills__item">
+							<input type="checkbox" name="gulp" id="gulp" checked="checked"/>
+							<label for="gulp">gulp</label>
+						</li>
+						<li class="skills__item">
+							<input type="checkbox" name="jquery" id="jquery" checked="checked"/>
+							<label for="jquery">jquery</label>
+						</li>
+						<li class="skills__item">
+							<input type="checkbox" name="bootstrap" id="bootstrap" checked="checked"/>
+							<label for="bootstrap">bootstrap</label>
+						</li>
+					</ul>
+				</section>
+				<section class="level-js">
+					<div class="level-js__counter-container">
+						<h2 class="level-js__title">Мой уровень владения Java Script</h2><span class="level-js__counter js-counter">0</span>
+					</div>
+					<div class="level-js__scale-container">
+						<svg class="level-js__scale js-scale" xmlns="http://www.w3.org/2000/svg" width="255" height="129" viewBox="0 0 255 129">
+							<path fill="#ffc815" d="M.988 127.931a125.713 125.713 0 0149.176-99.64L85.006 70.64c-18.658 14.64-28.428 31.948-28.428 57.291H.988z"></path>
+							<path fill="#a3cd3b" d="M56.124 23.992a127.058 127.058 0 01145.817 0l-34.518 43.039c-14.684-9.917-26.3-12.2-38.387-12.2-12.056 0-26.188 4.358-38.352 12.2z"></path>
+							<path fill="#0093d7" d="M206.248 28.291a126.875 126.875 0 0147.792 99.64h-53.987c0-25.343-10.4-43.4-27.486-57.291z"></path>
+						</svg>
+						<svg class="level-js__scale-arrow js-scale-arrow" xmlns="http://www.w3.org/2000/svg" width="66" height="21" viewBox="0 0 66 21">
+							<path fill="#3e3d40" d="M64.987 10.705a9.23 9.23 0 01-9.334 9.282L.987 10.56 55.877.985a9.526 9.526 0 019.11 9.72z"></path>
+						</svg>
+					</div>
+				</section>
+			</div>
+		</main>
+		<script src="js/vendor.js?v=1582288553209"></script>
+		<script src="js/main.js?v=1582288553209"></script>
+	</body>
+</html>

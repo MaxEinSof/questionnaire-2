@@ -1,0 +1,13 @@
+@mixin section {
+	margin-bottom: 2px;
+	padding: 0 20px 26px;
+	background-image: url("../images/bg-texture.jpg");
+	background-position: 50% 0;
+	background-size: contain;
+	background-repeat: repeat-y;
+	background-color: $color-white;
+
+	@include retina {
+		background-image: url("../images/bg-texture@2x.jpg");
+	}
+}

@@ -1,0 +1,4 @@
+mixin skill-item(name, isChecked, engName)
+	li.skills__item
+		input(type="checkbox" name=(engName ? engName : name) id=(engName ? engName : name) checked=isChecked)
+		label(for=(engName ? engName : name))= name

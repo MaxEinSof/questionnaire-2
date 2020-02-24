@@ -1,0 +1,77 @@
+.level-js {
+	@include section;
+
+	display: flex;
+	padding-top: 56px;
+	padding-bottom: 58px;
+
+	&__title {
+		margin: 0;
+		margin-bottom: 28px;
+		max-width: 220px;
+		font-weight: 500;
+		line-height: 24px;
+		color: $color-alt-black;
+
+		@include mobile {
+			margin-right: auto;
+			margin-left: auto;
+		}
+	}
+
+	&__scale-container {
+		position: relative;
+		order: 1;
+		margin-right: 65px;
+		width: 255px;
+
+		@include mobile {
+			order: 2;
+			margin: 0 auto;
+		}
+	}
+
+	&__scale {
+		path {
+			transition: opacity $transition-time $transition-function;
+			cursor: pointer;
+
+			&:hover {
+				opacity: 0.5;
+			}
+		}
+	}
+
+	&__scale-arrow {
+		position: absolute;
+		right: 114px;
+		bottom: 0;
+		transform-origin: 56px 10px;
+	}
+
+	&__counter-container {
+		order: 2;
+		padding-top: 6px;
+
+		@include mobile {
+			order: 1;
+			margin-bottom: 30px;
+			padding-top: 0;
+			text-align: center;
+		}
+	}
+
+	&__counter {
+		font-weight: 900;
+		font-size: 50px;
+		letter-spacing: 0.05em;
+		color: $color-cerulean;
+	}
+
+	@include mobile {
+		flex-direction: column;
+		padding-top: 32px;
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+}

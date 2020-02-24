@@ -1,0 +1,23 @@
+section.personal-info
+	h2.personal-info__title
+		| Личная информация
+	.personal-info__photo
+		img(src="images/photo.jpg" width="138" height="138" alt="Фотография")
+
+	.personal-info__inputs
+		.personal-info__input.js-input.is-filled
+			label(for="name")
+				| Имя
+			input(type="text" name="name" id="name" minlength="2" maxlength="15" value="Максим")
+		.personal-info__input.js-input.is-filled
+			label(for="birth-date")
+				| Дата рождения
+			input(type="text" name="birth-date" id="birth-date" value="24.04.1988")
+		.personal-info__input.js-input.is-filled
+			label(for="city")
+				| Город
+			input(type="text" name="city" id="city" value="Михайловск")
+		.personal-info__input.js-input.is-filled
+			label(for="contact-details")
+				| Контактные данные
+			input(type="text" name="contact-details" id="contact-details" value="maxeinsof@gmail.com")

@@ -1,0 +1,17 @@
+extends pug/base
+
+append vars
+	-
+		var baseDir = ''
+	-
+		var title = 'Анкета'
+		var description = 'Анкета на должность фронтенд-разработчика'
+
+block content
+	main.site-main
+		h1.site-main__title
+			| Анкета
+		.container
+			include pug/personal-info
+			include pug/skills
+			include pug/level-js
